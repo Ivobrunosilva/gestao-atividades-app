@@ -1,0 +1,14 @@
+<div class="main">
+    <div class="main-container">
+        <header>
+            <button pButton pRipple type="button" icon="pi pi-bars" class="p-button-rounded p-button-lg btn-menu" id="sidebarCollapse"></button>
+            <span class="btn-group">
+                <button pButton pRipple type="button" icon="pi pi-search" class="p-button-rounded p-button-lg btn-search"></button>
+                <button pButton pRipple type="button" icon="pi pi-bell" class="p-button-rounded p-button-lg btn-notifications">
+                    <p-badge [value]="2" severity="danger" ></p-badge>
+                </button>
+            </span>
+        </header>
+        <router-outlet></router-outlet>
+    </div>
+</div>

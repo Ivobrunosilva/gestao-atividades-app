@@ -1,0 +1,1 @@
+export const URL_SERVIDOR: string = 'http://localhost:8080/wsgestaoatividades/v1/';

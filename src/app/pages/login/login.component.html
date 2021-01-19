@@ -1,0 +1,19 @@
+<div class="welcome-msg">
+    <h2>Olá!</h2>
+    <p>
+        Seja bem-vindo ao seu <b>painel de atividades</b>
+    </p>
+</div>
+<form class="form" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+    <span class="p-float-label">
+        <input id="float-login" type="text" pInputText formControlName="login" autocomplete="username">
+        <label for="float-login">Login</label>
+    </span>
+    <span class="p-float-label">
+        <input id="float-senha" type="password" pInputText formControlName="senha" autocomplete="current-password">
+        <label for="float-senha">Senha</label>
+    </span>
+    <button pButton pRipple type="button" label="Entrar" (click)="onSubmit()" class="p-button-rounded p-button-outlined"></button>
+    <p><a href="#">Esqueci minha senha</a></p>
+</form>
+<span class="version">ver.: 1.0.0</span>

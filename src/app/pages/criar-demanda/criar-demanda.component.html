@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+            <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet"  href="">
+
+    </head>
+    <body>
+      <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+
+                <div class="sidebar-header">
+                    <h3>Hapvida</h3>
+                </div>
+    
+                <ul class="list-unstyled components">
+                    <li>
+                        <a routerLink="/criar-demanda">Criar Demanda</a>
+                    </li>
+                    <li>
+                        <a routerLink="/atualizar-status">Atualizar Status</a>
+                    </li>
+                    <li>
+                        <a routerLink="/finalizar-cancelar">Finalizar/Cancelar</a>
+                    </li>
+                    <li>
+                      <a routerLink="/alt-recorrencia">Alterar Recorrência</a>
+                  </li>
+                  <li>
+                    <a routerLink="/listar-atividade">Listar Atividades</a>
+                </li>
+                <li>
+                  <a routerLink="/listar-responsaveis">Listar responsáveis</a>
+              </li>
+              <li  class="active">
+                <a routerLink="/dashboard">Dashboard</a>
+            </li>
+                </ul>
+            </nav>
+    
+            <!-- Page Content  -->
+            <div id="content">
+
+
+
+    
+    
+
+      <h3>Criar Demanda</h3>
+      <p></p>
+      <div>Responsavel</div>
+
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ESCOLHA UMA OPÇÃO
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <p></p>
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon2">Assunto</span>
+        <div class="input-group-prepend">
+        </div>
+        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon2">Descrição da Demanda</span>
+        <div class="input-group-prepend">
+        </div>
+        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+      </div>
+
+      <p></p>
+
+      <div class="container">
+        <div class="row">
+          <div class="">
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dia
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mês
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ano
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p></p>
+      <div class="row">
+        <div class="col-9">
+      <button type="button" class="btn btn-primary " routerLink="/dashboard">Salvar</button>
+        </div>
+      </div>
+
+      <div class="line"></div>
+    </div>
+</div>
+</body>
+</html>
+

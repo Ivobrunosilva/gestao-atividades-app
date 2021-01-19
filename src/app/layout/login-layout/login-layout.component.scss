@@ -1,0 +1,33 @@
+@import './../../../setup';
+.main-login {
+    background: $hap-color;
+    background: linear-gradient(180deg, $hap-color 0%, #0462c7 100%);   
+    height: 100vh;
+    &::before {
+        background-image: url(./../../../assets/img/flor-r.svg);
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: 10%;
+        display: block;
+        content: '';
+        position: absolute;
+        top: 10%;
+        width: 100%;
+    }
+    .login-container {
+        padding: 20px;
+        .logo-hap {
+            background-image: url(./../../../assets/img/logo-hapvida.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            content: "";
+            display: block;
+            height: 60px;
+            margin: auto;
+            max-width: 264px;
+            span { display: none; }
+        }
+    }
+}

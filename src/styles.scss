@@ -1,0 +1,54 @@
+@import './setup';
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    h1, h2, h3, h4, h5 {
+        margin: 0;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"] {
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        padding: 12px;
+    }
+    .main {
+        header {
+            background-color: $hap-color;
+            display: block;
+            height: 50px;
+            position: relative;
+            width: 100%;
+            &::before {
+                content: "";
+                background-color: transparent;
+                border-top-left-radius: 15px;
+                bottom: -50px;
+                box-shadow: 0 -25px 0 0 $hap-color;
+                height: 50px;
+                left: 0;
+                position: absolute;
+                width: 25px;
+            }
+            &::after {
+                content: "";
+                background-color: transparent;
+                border-top-right-radius: 15px;
+                bottom: -50px;
+                box-shadow: 0 -25px 0 0 $hap-color;
+                height: 50px;
+                position: absolute;
+                right: 0;
+                width: 25px;
+            }        
+        }
+    }
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

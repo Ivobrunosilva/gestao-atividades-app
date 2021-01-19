@@ -1,0 +1,64 @@
+@import './../../../setup';
+.welcome-msg {
+    color: white;
+    display: block;
+    margin: 35px auto;
+    max-width: 68%;
+    text-align: center;
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0;
+    }
+    h2 {
+        font-weight: 400;
+    }
+}
+.form {
+    display: block;
+    margin: 10px auto;
+    max-width: 320px;
+    text-align: center;
+    .p-float-label {
+        margin-bottom: 25px;
+        width: 100%;
+        label {
+            color: white;
+            left: 15px;
+        }
+        input {
+            background-color: $hap-color;
+            padding: 15px;
+            width: 100%;
+        }
+        .p-inputtext {
+            color: white;
+        }
+    }
+    button {
+        border-color: white;
+        color: white;
+        min-width: 200px;
+        padding: 15px;
+    }
+    p {
+        padding: 10px;
+        a, a:hover, a:focus, a:active {
+            color: white;
+            font-weight: 300;
+            text-decoration: underline;
+        }
+    }
+}
+.version {
+    bottom: 20px;
+    color: $version-color;
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    left: 15px;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+
+}

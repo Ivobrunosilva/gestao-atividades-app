@@ -1,0 +1,26 @@
+@import './../../../setup';
+.main {
+    .main-container {
+        background-color: $base-color;
+        height: 100vh;
+        header {
+            padding: 7px;
+            .p-button {
+                background: transparent;
+                border: transparent;
+                color: white;
+                p-badge {
+                    top: -4px;
+                    position: absolute;
+                    right: 4px;
+                }
+            }
+      
+            .btn-group {
+                float: right;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+}
